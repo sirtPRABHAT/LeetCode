@@ -1,5 +1,19 @@
 class Solution {
     public int numIdenticalPairs(int[] nums) {
+        
+        public int numIdenticalPairs(int[] nums) {
+        int[] a =  new int[101];
+        int result =0;
+        for(int n : nums){
+            result += a[n];
+            a[n] = a[n]+1;
+        }
+        return result;
+        
+        
+    }
+        
+    }
 //         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 //         for(int i=0; i < nums.length; i++){
 //             if(map.get(nums[i]) == null){
@@ -26,12 +40,7 @@ class Solution {
 //         }
        
 //         return result;
-        int cnt[] = new int[101], res = 0;
-    for (var n: nums)
-        res += cnt[n]++;
-    return res;
-        
-    }
+
     
 //     public int p(int n){
 //         int p = 0;
@@ -46,4 +55,4 @@ class Solution {
 //         }
 //         return f;
 //     }
-}
+//}
