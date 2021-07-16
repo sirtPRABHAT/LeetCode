@@ -40,3 +40,6 @@ class Solution {
         return list;
     }
 }
+
+
+//FOR REVERSING TRY BETTER SOLUTION;
