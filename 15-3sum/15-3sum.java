@@ -25,8 +25,8 @@ class Solution {
                         res.add(temp);
                         //break;
                     }
-                   int d = s-0;
-                    if(d < 0){
+                   
+                    if(s < 0){
                         l++;
                     }else{
                         r--;
